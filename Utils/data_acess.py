@@ -52,7 +52,7 @@ def update_some_data(data):
         cursor = conn.cursor()
 
         cursor.execute("""
-                        update tblDomainMerchants
+                        update dbo.some_table
                         set column1 = ?
                         where column2 = ?
                         """,
